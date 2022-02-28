@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220220 14:29:33.312" rpa="false" schemaversion="2">
+<suite id="s1" name="Login test scenarios" source="C:\Users\emmab\PycharmProjects\Orange_Tests\Tests\Login_test_scenarios.robot">
+<test id="s1-t1" name="Test login Functionality">
+<kw name="Launch browser and navigate to homepage" library="Login_TestAutomation">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220220 14:29:33.742" level="INFO">Opening browser 'CHROME' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220220 14:29:33.742" endtime="20220220 14:29:37.551"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220220 14:29:37.551" endtime="20220220 14:29:37.674"/>
+</kw>
+<status status="PASS" starttime="20220220 14:29:33.742" endtime="20220220 14:29:37.674"/>
+</kw>
+<kw name="Input Login Credentials" library="Login_TestAutomation">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME_FIELD}</arg>
+<arg>${USER_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220220 14:29:37.676" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20220220 14:29:37.675" endtime="20220220 14:29:37.743"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220220 14:29:37.743" level="INFO">Typing text 'admin123' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20220220 14:29:37.743" endtime="20220220 14:29:37.807"/>
+</kw>
+<status status="PASS" starttime="20220220 14:29:37.675" endtime="20220220 14:29:37.807"/>
+</kw>
+<kw name="Click Login Button And Assert Login" library="Login_TestAutomation">
+<kw name=" Click Element" library="Login_TestAutomation">
+<arg>${LOGIN_BUTTON}</arg>
+<msg timestamp="20220220 14:29:37.808" level="FAIL">Keyword 'Login_TestAutomation. Click Element' expected 0 arguments, got 1.</msg>
+<status status="FAIL" starttime="20220220 14:29:37.808" endtime="20220220 14:29:37.808"/>
+</kw>
+<status status="FAIL" starttime="20220220 14:29:37.807" endtime="20220220 14:29:37.808"/>
+</kw>
+<doc>checking logging variables</doc>
+<status status="FAIL" starttime="20220220 14:29:33.742" endtime="20220220 14:29:37.809">Keyword 'Login_TestAutomation. Click Element' expected 0 arguments, got 1.</status>
+</test>
+<test id="s1-t2" name="Test basic Elements On page">
+<kw name="Admin Functions" library="Login_TestAutomation">
+<kw name=" Click Element" library="Login_TestAutomation">
+<arg>${ADMIN_BUTTON}</arg>
+<msg timestamp="20220220 14:29:37.811" level="FAIL">Keyword 'Login_TestAutomation. Click Element' expected 0 arguments, got 1.</msg>
+<status status="FAIL" starttime="20220220 14:29:37.811" endtime="20220220 14:29:37.811"/>
+</kw>
+<kw name=" Click Element" library="Login_TestAutomation">
+<arg>${USER_MANAGEMENT_BUTTON}</arg>
+<status status="NOT RUN" starttime="20220220 14:29:37.811" endtime="20220220 14:29:37.811"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${USER_MANAGEMENT_BUTTON}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20220220 14:29:37.811" endtime="20220220 14:29:37.811"/>
+</kw>
+<kw name=" Click Element" library="Login_TestAutomation">
+<arg>${USER_BUTTON}</arg>
+<status status="NOT RUN" starttime="20220220 14:29:37.811" endtime="20220220 14:29:37.811"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SYSTEM_USER_USERNAME_FIELD}</arg>
+<arg>${SYSTEM_USER_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220220 14:29:37.811" endtime="20220220 14:29:37.811"/>
+</kw>
+<kw name=" Click Element" library="Login_TestAutomation">
+<arg>${USER_ROLE}</arg>
+<status status="NOT RUN" starttime="20220220 14:29:37.811" endtime="20220220 14:29:37.811"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${USER_ROLE}</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20220220 14:29:37.811" endtime="20220220 14:29:37.811"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMPLOYEE_NAME}</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220220 14:29:37.811" endtime="20220220 14:29:37.811"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${EMPLOYEE_STATUS}</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20220220 14:29:37.811" endtime="20220220 14:29:37.812"/>
+</kw>
+<status status="FAIL" starttime="20220220 14:29:37.810" endtime="20220220 14:29:37.812"/>
+</kw>
+<kw name="PIM Functions" library="Login_TestAutomation">
+<status status="NOT RUN" starttime="20220220 14:29:37.812" endtime="20220220 14:29:37.812"/>
+</kw>
+<doc>Basic Elements should be checked for functionalities. Smoke test.</doc>
+<status status="FAIL" starttime="20220220 14:29:37.810" endtime="20220220 14:29:37.812">Keyword 'Login_TestAutomation. Click Element' expected 0 arguments, got 1.</status>
+</test>
+<doc>checking logging variables</doc>
+<status status="FAIL" starttime="20220220 14:29:33.312" endtime="20220220 14:29:37.814"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Login test scenarios">Login test scenarios</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220220 14:29:33.455" level="ERROR">Error in file 'C:\Users\emmab\PycharmProjects\Orange_Tests\Resources\Login_TestAutomation.robot' on line 2: Importing library 'Faker' failed: ModuleNotFoundError: No module named 'Faker'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\emmab\PycharmProjects\Orange_Tests\venv\Scripts\robot.exe
+  C:\Program Files\Python310\python310.zip
+  C:\Program Files\Python310\DLLs
+  C:\Program Files\Python310\lib
+  C:\Program Files\Python310
+  c:\users\emmab\pycharmprojects\orange_tests\venv
+  c:\users\emmab\pycharmprojects\orange_tests\venv\lib\site-packages</msg>
+</errors>
+</robot>
